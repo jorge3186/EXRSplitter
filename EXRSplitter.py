@@ -1,8 +1,25 @@
+
+#-------------------------------------------------------------------#
+#                                                                   #
+#                                                                   #
+#                                                                   #
+#                                                                   #
+#   Nuke script for extracting all channels inside exr file         #
+#   and grouping them together for visual/reference purposes        #
+#   as well as ease of access for adjustments.                      #
+#                                                                   #
+#   Created by Jordan Alphonso on 4/15/2013                         #
+#   email: jordan@pixelmagicfx.com                                  #
+#   version: 1.0                                                    #
+#                                                                   #
+#                                                                   #
+#                                                                   #
+#                                                                   #
+#-------------------------------------------------------------------#
+
+
 import nuke as n
 import string as str
-
-#Takes your exr file and extracts all channels in their own group
-#Combines them back with viewer options
 
 def EXRSplit():
     
