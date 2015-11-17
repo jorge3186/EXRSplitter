@@ -268,23 +268,3 @@ def EXRSplit():
                 
             else:
                 n.message('This EXR only contains RGBA channels.')
-            
-def checkNodeName(theName):
-    #adds a number in brackets to the string if another node
-    #exists with that name, otherwise just returns the string
-    i = 1
-    stillChecking = True
-    origName = theName
-    while stillChecking:
-        alreadyUsed = False
-        for a in n.allNodes():
-            if (a['name'].value()==(theName)):
-                alreadyUsed = True    
-                break
-        if alreadyUsed:
-            theName = origName + ' (' + str(i) + ')'
-            i = i+1    
-        else:
-            stillChecking=False
-    
-    return theName
